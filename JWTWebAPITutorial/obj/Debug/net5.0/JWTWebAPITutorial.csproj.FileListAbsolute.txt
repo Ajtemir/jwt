@@ -32,3 +32,14 @@
 /home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
 /home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Newtonsoft.Json.dll
 /home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.DotNet.PlatformAbstractions.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Scrutor.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Swashbuckle.AspNetCore.Annotations.dll
+/home/aitemir/csharp_cmd/eframework/JWTWebAPITutorial/JWTWebAPITutorial/bin/Debug/net5.0/Swashbuckle.AspNetCore.Filters.dll

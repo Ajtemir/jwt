@@ -6,6 +6,8 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Threading.Tasks;
 using JWTWebAPITutorial;
+using JWTWebAPITutorial.Services.UserService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -20,10 +22,25 @@ namespace JWTWebAPITutorial.Controllers
         
         public static User user = new();
         private readonly IConfiguration _configuration;
+        private readonly IUserService _userService;
 
-        public AuthController(IConfiguration configuration)
+        public AuthController(IConfiguration configuration, IUserService userService)
         {
             _configuration = configuration;
+            _userService = userService;
+        }
+
+        [HttpGet,Authorize]
+        public ActionResult<string> GetMe()
+        {
+            var userName = _userService.GetMyName();
+            return Ok(userName);
+
+            // var userName = User?.Identity?.Name;
+            // var userName2 = User?.FindFirstValue(ClaimTypes.Name);
+            // var role = User?.FindFirstValue(ClaimTypes.Role);
+            // var country = User.FindFirstValue(ClaimTypes.Country);
+            // return Ok(new {userName, userName2, role,country});
         }
 
         [HttpPost("register")]
@@ -55,7 +72,9 @@ namespace JWTWebAPITutorial.Controllers
         {
             List<Claim> claims = new()
             {
-                new Claim(ClaimTypes.Name, user.Username)
+                new Claim(ClaimTypes.Name, user.Username),
+                new Claim(ClaimTypes.Role, "Admin"),
+                
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
